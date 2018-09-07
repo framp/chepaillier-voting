@@ -1,0 +1,15 @@
+{
+  "name": "chepaillier-voting",
+  "version": "0.9.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "sed -i '/\\/\\/ TEST/d' index.js lens.js",
+    "test": "node index.js"
+  },
+  "author": "Federico Rampazzo <frampone@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "paillier-bignum": "^1.1.2"
+  }
+}
